@@ -1,0 +1,31 @@
+{
+    "provincias": [
+      { "nombre": "Punto de Entrega", "precio": 0 },
+      { "nombre": "Arequipa", "precio": 15 },
+      { "nombre": "Ancash", "precio": 15 },
+      { "nombre": "Apurímac", "precio": 15 },
+      { "nombre": "Ayacucho", "precio": 15 },
+      { "nombre": "Cajamarca", "precio": 15 },
+      { "nombre": "Callao", "precio": 15 },
+      { "nombre": "Cusco", "precio": 15 },
+      { "nombre": "Huánuco", "precio": 15 },
+      { "nombre": "Huancavelica", "precio": 15 },
+      { "nombre": "Ica", "precio": 15 },
+      { "nombre": "Junín", "precio": 15 },
+      { "nombre": "Lambayeque", "precio": 15 },
+      { "nombre": "Lima(provincia)", "precio": 15 },
+      { "nombre": "Lima Metropolitana", "precio": 10 },
+      { "nombre": "Loreto", "precio": 15 },
+      { "nombre": "Madre de Dios", "precio": 15 },
+      { "nombre": "Moquegua", "precio": 15 },
+      { "nombre": "Pasco", "precio": 15 },
+      { "nombre": "Piura", "precio": 15 },
+      { "nombre": "Puno", "precio": 15 },
+      { "nombre": "San Martín", "precio": 15 },
+      { "nombre": "Tacna", "precio": 15 },
+      { "nombre": "Tumbes", "precio": 15 },
+      { "nombre": "Ucayali", "precio": 15 },
+      { "nombre": "La Libertad", "precio": 15 }
+    ]
+  }
+  

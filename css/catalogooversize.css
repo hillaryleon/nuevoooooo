@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.encabezado-arriba{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+ .encabezado-arriba-logos{
+    margin-left: 100px;
+ }
+
+ .promocion{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+ }
+
+ .promocion-diamante{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+ }
+
+ .promocion-texto{
+    font-size: 30px;
+    text-align: center;
+ }
+
+.botones-encabezado1{
+    display: flex; /* Para alinear los elementos del formulario */
+    margin-right: 250px; 
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.boton-carrito{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.encabezado-abajo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #007bff;
+    height: 120px;
+    border-top: 1px solid #ccc; /* Línea superior */
+    border-bottom: 1px solid #ccc; /* Línea inferior */
+} 
+
+.encabezado-abajo-lista{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 10px; 
+}
+
+.encabezado-abajo-menu{
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: black; /* Define el color del enlace */
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.tituloprincipal{
+    font-family: "Cookie", cursive;
+    font-size:80px;
+    margin-right: 250px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.imagen-logoprincipal{
+    width: 150px;
+    height: 150px;
+}
+
+.titulo-productos{
+    font-size: 48px;
+    text-align: center;
+    color: black;
+}
+
+.container-productos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0px; 
+}
+
+.productos{
+    width: 480px;
+    height: 700px;
+    padding-top: 40px;
+    margin: 60px 70px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    border: 3.5px solid #846f18;
+}
+
+.productos:hover{
+    border: 3.5px solid #cd9484;
+}
+
+.polos{
+    transition: transform 0.1s ease;
+}
+
+.polos:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.nombre-producto{
+    font-size: 20px;
+    padding-top: 50px;
+    color: #cd9484;
+    text-align: center;
+}
+
+.nombre-producto:hover{
+    text-decoration: underline;
+    color: #846f18;
+}
+
+.precio-producto{
+    color: black;
+    padding-top: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.precio-producto:hover{
+    color: red;
+}
+
+.titulo-footer{
+    font-size: 36px;
+    margin-left: 75px;
+}
+
+.entregas{
+    display: flex;
+    margin: 50px 200px;
+    text-align: center;
+}
+
+.entregas-info{
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin:  10px 20px;
+}
+
+.entrgas-titulo{
+    font-size: 24px;
+}
+
+.entregas-texto{
+    font-size:16px ;
+    margin-top: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-top: 2px solid #ccc; /* Línea superior */
+    border-bottom: 2px solid #ccc; /* Línea inferior */
+    padding: 20px; /* Espacio interno */
+}
+
+.footer-correo{
+    margin-left: 280px;
+}
+
+.descuento{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.correo{
+    margin: 10px 20px;
+}
+
+.correo-cuadro{
+    width: 300px;
+}
+
+.correo-cuadro[type="email"]{
+    text-align: center;
+}
+
+.footer-logos{
+    margin-right: 350px;
+}
+
+.logo-final{
+    margin-left: 800px;
+}
+
+
+
+
+
+
+
+
+.search-button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+}
+ 
+.search-container {
+    display: flex;
+}
+
+.search-box{
+    width: 1200;
+    display: flex;
+    border: none;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.search-box-1 {
+    display: flex;
+    top: 40px;
+    left: 0;
+    border: 1px solid white;
+    width: 800px;
+    padding: 5px;
+    background-color: transparent;
+    margin-left: 500px;
+}
+
+#search-input{
+    width: 780px;
+    border: none;
+    outline: none;
+    height: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.clear-button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.boto{
+    display: flex;
+    align-items: center;
+}
+
+.submit-button{
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-button {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    margin: 10px 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.product-list {
+    max-height: 600px; /* Altura máxima de la lista para el scroll */
+    overflow-y: scroll; /* Permitir el desplazamiento vertical */
+    border: none; /* Agregar borde para visualizar mejor la lista */
+    margin-left: 500px; 
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 814px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    top: 123px;
+    cursor: pointer;
+}
+
+/* Estilos para el listado de productos */
+.product-item {
+    display: flex;
+    flex-direction: row;  /* Cambia de columna a fila */
+    align-items: center;
+    padding: 15px;
+    margin:10px 0;
+    background-color: black;
+}
+
+.product-item:hover {
+    background-color: #333;
+}
+
+.product-image {
+    width: 100px;   /* Ajusta el tamaño de la imagen para que no ocupe tanto espacio */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;  /* Espacio entre la imagen y el nombre */
+    margin-left: 50px;
+    background-color: white;
+}
+
+.product-name{
+    color: white;
+    text-decoration: none;
+}
+
+.product-name:hover{
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+
+.product-name:active {
+    text-decoration: underline; /* Subrayar al hacer clic */
+}
+
+.hidden {
+    display: none;
+}
+
+.product-list-title {
+    font-size: 12px; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Negrita */
+    margin: 10px 0; /* Margen alrededor del título */
+    text-align: center; /* Centrar el texto */
+    color: white; /* Color del texto */
+    border-bottom: 1px solid #333; /* Línea inferior */
+    padding-bottom: 10px;
+}
+
+
+/*#alert-carrito {
+    position: fixed;  
+}
+
+.product-list div {
+    padding: 5px;
+    cursor: pointer;
+}

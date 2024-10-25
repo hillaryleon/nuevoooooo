@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Pago</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Incluye un archivo CSS externo para estilos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .left {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .right {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 50px; /* Ajusta el tamaño del logo */
+            margin-right: 10px;
+        }
+        .payment-option {
+            margin-bottom: 20px;
+        }
+        .details {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e8e8e8;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <h2>¿Cómo quieres pagar?</h2>
+        
+        <!-- Opción 1: Pago por transferencia -->
+        <div class="payment-option">
+            <h3>Pago por transferencia</h3>
+            <p>Cual es tu banco:</p>
+            <select id="banco-transferencia">
+                <option value="">Selecciona tu banco</option>
+                <option value="banco1">Banco 1</option>
+                <option value="banco2">Banco 2</option>
+                <option value="banco3">Banco 3</option>
+            </select>
+        </div>
+
+        <!-- Opción 2: Depósito -->
+        <div class="payment-option">
+            <h3>Depósito</h3>
+            <p>¿Dónde quieres pagar?</p>
+            <select id="lugar-deposito">
+                <option value="">Selecciona un lugar</option>
+                <option value="lugar1">Lugar 1</option>
+                <option value="lugar2">Lugar 2</option>
+                <option value="lugar3">Lugar 3</option>
+            </select>
+        </div>
+
+        <!-- Opción 3: Billeteras digitales -->
+        <div class="payment-option">
+            <h3>Billeteras digitales</h3>
+            <select id="billetera-digital" onchange="mostrarDetalles()">
+                <option value="">Selecciona una billetera</option>
+                <option value="billetera1">Billetera 1</option>
+                <option value="billetera2">Billetera 2</option>
+                <option value="billetera3">Billetera 3</option>
+            </select>
+            <div id="detalles-billetera" class="details" style="display: none;">
+                <h4 id="nombre-billetera"></h4>
+                <img id="qr" src="" alt="QR Code" style="display: none;">
+                <p>Detalles adicionales sobre el pago.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="header">
+            <img src="logo.png" alt="Logo"> <!-- Cambia el nombre del archivo del logo -->
+            <h2>Nombre de la Marca</h2>
+        </div>
+        <div class="details">
+            <h3>Detalles de Pago</h3>
+            <p>Aquí se mostrarán los detalles de tu pago.</p>
+        </div>
+    </div>
+
+    <script>
+        // Función para mostrar los detalles de la billetera digital seleccionada
+        function mostrarDetalles() {
+            const billetera = document.getElementById('billetera-digital').value;
+            const detallesBilletera = document.getElementById('detalles-billetera');
+            const nombreBilletera = document.getElementById('nombre-billetera');
+            const qr = document.getElementById('qr');
+
+            if (billetera) {
+                // Muestra detalles según la billetera seleccionada
+                if (billetera === 'billetera1') {
+                    nombreBilletera.textContent = 'Billetera 1';
+                    qr.src = 'qr1.png'; // Cambia a la imagen del QR correspondiente
+                } else if (billetera === 'billetera2') {
+                    nombreBilletera.textContent = 'Billetera 2';
+                    qr.src = 'qr2.png'; // Cambia a la imagen del QR correspondiente
+                } else if (billetera === 'billetera3') {
+                    nombreBilletera.textContent = 'Billetera 3';
+                    qr.src = 'qr3.png'; // Cambia a la imagen del QR correspondiente
+                }
+
+                // Muestra el QR y los detalles
+                detallesBilletera.style.display = 'block';
+                qr.style.display = 'block';
+            } else {
+                detallesBilletera.style.display = 'none'; // Oculta los detalles si no hay billetera seleccionada
+            }
+        }
+    </script>
+</body>
+</html>

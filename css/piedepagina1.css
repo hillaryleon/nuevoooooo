@@ -1,0 +1,40 @@
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-top: 2px solid #ccc; /* Línea superior */
+    border-bottom: 2px solid #ccc; /* Línea inferior */
+    padding: 20px; /* Espacio interno */
+    margin-top: 50px;
+}
+
+.footer-correo{
+    margin-left: 280px;
+}
+
+.descuento{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.correo{
+    margin: 10px 20px;
+}
+
+.correo-cuadro{
+    width: 300px;
+}
+
+.correo-cuadro[type="email"]{
+    text-align: center;
+}
+
+.footer-logos{
+    margin-right: 350px;
+}
+
+.logo-final{
+    margin-left: 800px;
+}

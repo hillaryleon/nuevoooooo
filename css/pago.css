@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.tituloprincipal{
+    font-family: "Cookie", cursive;
+    font-size:80px;
+    margin-left: 100px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.imagen-logoprincipal{
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+}
+
+.boton-carrito{
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    margin-right: 300px;
+    cursor: pointer;
+    color: white;
+}
+
+.pagina-pago {
+    display: flex;
+}
+
+.productos-carrito {
+    width: 1000px;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    margin-right: 200px;
+}
+
+.informacion-pago {
+    padding: 20px 100px;
+    width: 700px;
+    margin-left: 200px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input,
+.input-container select {
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    height: 30px;
+}
+
+.input-container select {
+    appearance: none; /* Elimina el estilo por defecto del select */
+}
+
+.input-container label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    padding: 10px 0;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container select:focus + label {
+    top: -5px;
+    left: 10px;
+    font-size: 12px;
+    color: #007BFF; /* Cambia el color al foco*/
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="checkbox"] + label {
+    display: inline;
+}
+
+
+
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+.form{
+    width: 325px;
+}
+
+.form:not(:last-child) {
+    margin-right: 10px;          /* Margen derecho para el primer input */
+}
+
+#pais{
+    height: 60px;
+    width: 720px;
+}
+
+#region{
+    height: 60px;
+    width: 230px;
+}
+
+#label1{
+    color: black;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    font-size: 12px;
+    color: #6f6f6f;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    padding-top: 3px;
+}
+
+
+
+
+/* Estilos generales para el contenedor del QR */
+#qr-yape {
+    display: none; /* Oculto por defecto */
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para la imagen del QR */
+#qr-yape img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Ajusta el tamaño del QR */
+}
+
+/* Estilo para el texto debajo del QR */
+#qr-yape p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-option {
+    width: 700px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.payment-option.selected {
+    background-color: #f6f6f6; /* Cambia el color de fondo cuando está seleccionada */
+    border-color: #007bff; /* Cambia el color del borde cuando está seleccionada */
+}
+
+.qr-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.qr-container img {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+.detalle {
+    padding: 10px;
+    border: 1px solid #ddd; /* Borde para los detalles */
+    margin-top: 5px; /* Espacio entre la opción y los detalles */
+}
+
+
+
+#info-seleccion .seleccion-texto{
+    margin-top: 10px;
+    padding: 10px; 
+}
+
+#info-seleccion .no-seleccion-texto {
+    color: #3e3d41;
+    padding:  0 10px;
+}
+
+/* Estilo del texto cuando sí hay región seleccionada */
+
+#info-seleccion {
+    margin-top: 10px;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    width: 700px;
+}
+
+
+
+.provi{
+    width: 210px;
+}
+
+.provi-region{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.provi:not(:last-child) {
+    margin-right: 30px;          /* Margen derecho para el primer input */
+}
+
+#direccion-facturacion-diferente{
+    background-color: #f6f6f6;
+    width: 620px;
+    padding: 20px 50px;
+}
+
+.facturacion{
+    width: 600px;
+}
+
+#pais1{
+    height: 60px;
+    width: 625px;
+}
+
+.provi1{
+    width: 180px;
+}
+
+.provi-region1{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+#region2{
+    height: 60px;
+    width: 200px;
+    margin: 0 px;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+#shippingForm {
+    margin-bottom: 20px;
+}
+.label2 {
+    display: block;
+    margin: 10px 0;
+}
+#selectedOption {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 700px;
+}
+
+#freeShippingOptions {
+    display: none; /* Ocultar las opciones de envío inicialmente */
+}
+#showFreeShipping{
+    background-color: transparent;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border: 2px solid #ddd;
+}
+.codigo-postal1{
+    font-size: 14px;
+}
+
+
+
+
+
+
+.oferta1 {
+    margin-bottom: 20px;
+}
+.caja1 {
+    width: 680px;
+    padding: 20px;
+    background-color: #e6f2ff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+.logos1 img {
+    width: 80px; /* Ajusta el tamaño según necesites */
+    margin: 10px;
+}
+
+#submitButton1{
+    margin-top: 100px;
+    width: 720px;
+    height: 50px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+#submitButton1:hover{
+    cursor: pointer;
+    background-color: #007bff;
+}
+
+
+
+
+
+/* Estilos para los productos del carrito */
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    height: 100px;
+}
+
+.producto img {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.producto-info {
+    flex-grow: 2;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.precio {
+    flex-shrink: 0;
+    font-weight: bold;
+    color: #000;
+    margin-left:  100px;
+}
+
+#precio1-seleccionado.no-seleccion-texto{
+    color: rgb(102, 102, 102);
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* Estilos básicos */
+ #subtotal-container {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los lados */
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.tamano-letra{
+    font-size: 14px;
+}
+
+#total-general{
+ font-size: 24px;
+ font-weight: bold;
+}
+
+.total-general{
+    font-size: 24px;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-top: 2px solid #ccc; /* Línea superior */
+    border-bottom: 2px solid #ccc; /* Línea inferior */
+    padding: 20px; /* Espacio interno */
+}
+
+.footer-correo{
+    margin-left: 280px;
+}
+
+.descuento{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.correo{
+    margin: 10px 20px;
+}
+
+.correo-cuadro{
+    width: 300px;
+}
+
+.correo-cuadro[type="email"]{
+    text-align: center;
+}
+
+.footer-logos{
+    margin-right: 350px;
+}
+
+.logo-final{
+    margin-left: 800px;
+}

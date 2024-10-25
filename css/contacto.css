@@ -1,0 +1,140 @@
+main {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Añadido para apilar el título y el formulario verticalmente */
+    height: 100vh;
+}
+
+h2 {
+    margin-bottom: 100px; /* Espacio debajo del título */
+    color: black; /* Color del texto del título */
+    margin-right: 370px;
+    font-size: 52px;
+
+}
+
+form {
+    width: 600px; /* Ancho del formulario */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-wrapper {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: transparent;
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin-right: 10px; /* Espacio entre los campos */
+    height: 25px; /* Ajuste de altura para Nombre y Correo */
+}
+
+/* Eliminar margen derecho del último en la fila */
+.form-wrapper:last-child {
+    margin-right: 0;
+}
+
+.form-group {
+    position: ab;
+    margin: 0;
+    height: 100%;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10%; /* Ajustar la posición vertical del label */
+    left: 10px;
+    transform: translateY(0); /* Cambiar a 0 para que no se mueva */
+    background-color: transparent;
+    transition: 0.s ease-in-out;
+    pointer-events: none;
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%; /* Asegura que el input ocupe el ancho total del contenedor */
+    padding: 2px 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: 0.3s;
+    height: 100%; /* Para que el input ocupe toda la altura del contenedor */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+}
+
+.form-group:focus-within label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -10px; /* Ajustar para que el label quede arriba del campo */
+    font-size: 12px;
+    padding: 7px 5px;
+}
+
+.full-width {
+    flex: 1 1 100%; /* Campo que ocupa todo el ancho */
+    margin-right: 0;
+    height: 150px; /* Ajuste de altura para el Comentario */
+}
+
+textarea {
+    resize: none; /* Para evitar que el usuario cambie el tamaño del área de texto */
+    height: 100%; /* Para que el textarea ocupe toda la altura del contenedor */
+    padding-top: 5px; /* Ajustar el relleno superior para alinear el texto */
+}
+
+.button1 {
+    width: 100px;
+    padding: 10px;
+    background-color: black;
+    color: #846f18;
+    border: 3px solid #cd9484;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: black;
+    color: #cd9484;
+    border: 3px solid #846f18;
+}
+
+
+
+
+/* Estilo para el mensaje de éxito */
+#successMessage {
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px; /* Espaciado interno */
+    background-color: black; /* Color de fondo verde claro */
+    color: white; /* Color del texto */
+    border: 1px solid #333; /* Borde verde */
+    border-radius: 5px; /* Bordes redondeados */
+    display: none; /* Inicialmente oculto */
+}
+
+#successMessage.hidden {
+    display: none; /* Ocultar cuando tenga la clase 'hidden' */
+}
+
+#successMessage:not(.hidden) {
+    display: block; /* Mostrar el mensaje cuando no tenga la clase 'hidden' */
+}
+
+

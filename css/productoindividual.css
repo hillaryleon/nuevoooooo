@@ -1,0 +1,262 @@
+.producto {
+    padding: 20px;
+    display: flex; /* Activa flexbox */
+    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
+    margin-left: 300px;
+}
+
+.imagen-producto {
+    margin-right: 20px; /* Espacio entre la imagen y la información */
+    margin-top: 50px;
+}
+
+.imagen-producto img {
+    width: 600px;
+    height: 600px;
+}
+
+.info-producto{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.info-titulo{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.info-talla{
+    margin-bottom: 20px;
+}
+
+.info-L{
+    margin: 10px 0;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 20px;
+    background: #000000;
+    color: white;
+    border: 2px solid #846f18;
+}
+
+.info-cantidad{
+    margin-top: 20px;
+}
+
+.info-numero{
+    margin: 5px 0;
+    text-align: center;
+}
+
+.info-disponible{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.alert-botones{
+    display: flex;
+}
+
+.boton-derecho{
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px ;
+    background-color: white;
+    color: black;
+    border: 2px solid #846f18;
+    font-size: 16px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.boton-isquierdo{
+    background-color: #000000;
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #846f18;
+    font-size: 20px;
+    margin-left: 25px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+#alert-carrito {
+    position: fixed;
+    top: 160px; /* Posiciona el alert en la parte superior */
+    left: 50%;
+    transform: translateX(8%); /* Centra horizontalmente */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100; /* Asegúrate de que esté por encima de otros elementos */
+    width: 320px;
+    height: 350px;
+    background-color: #000000;
+}
+
+
+.hidden {
+    display: none;
+}
+ 
+.alert-carrito-mensaje{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mensaje{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #cdcdcd;
+    margin-left: 8px;
+}
+
+#cerrar-alert-x{
+    background-color: transparent;
+    color: #cdcdcd;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/*.x{
+    background-color: transparent;
+    color: #cdcdcd;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: 20px;
+}*/
+
+.alert-content {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.alert-imagen{
+    margin: 10px;
+    background-color: white;
+    width: 100px;
+}
+
+.alert-detalles{
+    margin-right: 15px;
+}
+
+
+.alert-detalles-titulo{
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.alert-detalles-talla{
+    color: #cdcdcd;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+  
+.buttons a {
+    display: block;
+    margin-top: 10px;
+    border: 2px solid #846f18;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.buttons-1{
+    background-color: #000000;
+    color: white;
+}
+
+.buttons-2{
+    background-color: white;
+    color: #000000;
+}
+
+.seguir-comprando {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#seguir-comprando{
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0%;
+    margin-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+    /*.info-producto {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.info-producto h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-producto p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.talla, .cantidad {
+    margin-bottom: 10px;
+}
+
+.talla label, .cantidad label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.talla select, .cantidad input {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.info-producto button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}*/
+
+/* Estilos de la alerta personalizada */
+/* ... (tu CSS actual) ... */
+
+
